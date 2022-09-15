@@ -1,0 +1,210 @@
+<!doctype html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Northtel Infratech Pvt. Ltd | 404 Error</title>
+
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:700,400">
+	<link rel="stylesheet" href="css/fa/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="home page">
+<div class="home-wrapper">
+
+<header class="header header-home" style="background-image: url('img/homeclean.jpg')">
+
+
+	<!-- Header color overlay -->
+	<div class="header-color" style="background-color: rgba(0, 0, 0, 0.50);">
+
+
+		<!-- Header pattern -->
+		<div class="header-pattern">
+
+			<!-- Navigation bar -->
+			<div class="navigation-bar clearfix">
+				<div class="container">
+					<div class="logo pull-left">
+						<a href="index.html">
+							</a>
+					</div>
+					<!-- Navigation -->
+					<nav class="navigation pull-right vertical-center">
+						<ul class="topmenu">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="headliner container parallax-headliner">
+				<h1>404 Error<span class="the-span"></span> <br />Northtel Infratech Pvt. Ltd</h1>
+				<hr style="width:60%;">
+				<h2></h2>
+			</div>
+		</div>
+	</div>
+</header>
+
+<footer
+	class="sub-footer">
+	<div class="sub-footer-contact">
+		<div class="container">
+			<div class="row">
+				<div class="what-can-we-do col-md-4 col-sm-6 wow fadeInLeft">
+					<p class="sub-footer-intro sub-footer-intro-margin">Address</p>
+
+					<p>Northtel Infratech Pvt. Ltd</p>
+
+					<p>158, Gole Market, Karan Nagar,</p>
+
+					<p>Srinagar, Jammu and Kashmir, India</p>
+					<a href="tel=+91-9419744444" class="sub-footer-call-link"><span class="fa fa-phone"></span> +91-9419744444 </a>
+					<a href="mailto:info@northtel.com" class="sub-footer-email-link">info@northtel.com</a>
+				</div>
+				<div class="col-md-8 col-sm-6 wow fadeInRight">
+					<p class="sub-footer-intro">Contact Us for Assistance:</p>
+
+					<div class="sub-footer-form">
+						<form name="form">
+							<div class="row">
+						<center>	<p class="result" id="result"></p></center>
+								<div class="col-sm-6">
+								
+									<div class="input-container">
+										<input class="text-input floating-label" id="name" type="text" name="fullname" autocomplete="off" placeholder="Name"/>
+									</div>
+									<div class="input-container">
+										<input class="text-input floating-label" id="phone" type="text" placeholder="Phone Number" name="mobno" autocomplete="off"/>
+
+									</div>
+									<div class="input-container">
+										<input class="text-input floating-label" id="email" placeholder="Email Address" type="text"
+										       name="email_id" autocomplete="off"/>
+
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="input-container footer-send-wrapper">
+										<textarea class="text-input floating-label" id="message" rows="4" name="description" placeholder="Query"></textarea>
+
+									</div>
+								</div>
+							</div> <!--closed row-->
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="footer-send-wrapper">
+										<button type="button" id="footer-contact"
+										        class="footer-send-button
+                                            button button-inline
+                                            button-dark
+                                            button-naira
+                                            button-naira-up" name="Submit1" onClick="validation();">Send
+										</button>
+									</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="footer-send-wrapper">
+										<button type="reset" id="footer-nieuwsbrief"
+										        class="footer-send-button
+                                                button button-inline
+                                                button-dark button-naira
+                                                button-naira-up">Reset
+										</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					 <script>	
+	function validation(){
+	if( document.form.name.value =="")
+	{
+	document.getElementById("result").innerHTML="Please enter your Name";
+	return false;
+	}
+	
+	if( document.form.phone.value =="")
+	{
+	document.getElementById("result").innerHTML="Please enter your Phone Number";
+	return false;
+	}
+	
+	if( document.form.email.value =="")
+	{
+	document.getElementById("result").innerHTML="Please enter your Email"; 
+	return false;
+	}
+	
+	if( document.form.message.value =="")
+	{
+	document.getElementById("result").innerHTML="Please write your Query";
+	return false;
+	}
+
+	else{
+	submit_user();
+	}
+	}
+	</script>
+	
+   <script>
+	function submit_user(){
+    var name  = document.getElementById('name').value;
+    var email = document.getElementById('email').value;                    
+    var phone = document.getElementById('phone').value;
+    var message = document.getElementById('message').value;
+    $.ajax({
+    type: "POST",
+    url: "script.php?name="+name+"&email="+email+"&phone="+phone+"&message="+message,
+    success:function(data){
+    $(".result").html(data);
+    }
+    });
+    }
+   </script>  
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</footer>
+<section class="digital-transformation-home parallax-content">
+	<div class="primary-background"
+	     style="background-image: url('img/digital-transformation.png');">
+		<div class="digital-transformation-line">
+
+		</div>
+	</div>
+</section>
+<!-- We are proud of -->
+<div class="clearfix"></div>
+
+
+</div>
+
+
+<footer class="footer">
+	<section class="container">
+		<div class="row">
+			<section class="col-md-6">
+				<div class="footer-text vertical-center wow fadeInLeft">
+					<p>Northtel Infratech Pvt. Ltd, © 2020-21, All Rights Reserved. <a title="Privacy Policy" href="privacy-policy.html">Privacy Policy</a>, <a title="Disclaimer" href="disclaimer.html">Disclaimer</a>, <a title="Terms & Conditions" href="terms.html">Terms & Conditions</a</p>
+				</div>
+			</section>
+			
+				</div>
+			</aside>
+		</div>
+	</section>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/main-11b9e9ce.js"></script>
+</body>
+</html>

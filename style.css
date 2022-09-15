@@ -1,0 +1,55 @@
+
+.banner{position: relative; height: 400px;}
+.banner img{position: absolute; left: 0; top: 0; width: 100%;}
+.headliner{margin-top: 60px;}
+.blog-text a{margin-top: 20px;}
+
+ul.topmenu{list-style: none; padding: 0; text-transform: uppercase; font-size: 20px; font-family: Telex, sans-serif;}
+ul.topmenu li{display: inline; border-top: dashed 1px #999; border-bottom: dashed 1px #999; float: left; margin-left: 25px;}
+ul.topmenu li a{display: block; padding: 5px 30px; color: #999;}
+ul.topmenu li a:hover{color: #FFF;}
+ul.topmenu li.active a{color: #FFF;}
+
+.header .navigation a{color: #999;}
+
+.digital-wrapper{background: url(img/digital-transformation.png) center top no-repeat; padding: 50px 0; margin-top: -30px; background: #FFF; color: #000;}
+.lifecycle{margin-top: 0;}
+.testimonials{margin-top: 15px;}
+
+.logo a{font-size: 35px; font-weight: bold; color: #FFF;}
+.blog-text{height: auto;}
+.blog-image img{width: 100%; height: auto; padding-right: 15px;}
+.blog-text h3{font-size: 1.3em;}
+.blog-image{height: 299px;}
+
+.searchform{border:solid 1px #052755; padding:2px; border-radius:20px;}
+
+.searchform input[type=search]{border:none; background:none; width:75%; float:left; padding:5px; font-style:italic;}
+
+.searchform button{display:block; float:left; width:15%; text-align:center; color:#052755; background:none; padding:8px 0; border:none;}
+.inpt-query{border:none; width:84%; padding:3px;}
+.inpt-query:focus{outline:none;}
+.enquiry .form-control{border-radius:0; box-shadow:none; padding:3px 10px;  margin-bottom:10px;}
+.form-control{margin-bottom:10px; font-family:Arial, Helvetica, sans-serif; font-style:italic; border-radius: 1px;}
+.button{background:#000 !important; color:#FFF !important; font-size:14px; font-weight:bold;}
+.sub-footer .sub-footer-contact{background: #FFF;}
+
+.lifecycle .lifecycle-container h3{color: #dc9203;}
+
+.close{margin-top:-35px !important;}
+.alert-success{font-size:12px !important;}
+
+@media(max-width: 1024px){
+    .headliner h1{font-size: 40px;}
+}
+
+@media (max-width: 768px){
+    ul.topmenu{font-size: 14px;}
+    .headliner{margin-top: 10px;}
+    .logo a{font-size: 28px;}
+}
+
+@media (max-width: 610px) {
+    .headliner{margin-top: 10px;}
+    ul.topmenu li{margin-left: 5px;}
+}

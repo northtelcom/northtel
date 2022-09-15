@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /css/
+Disallow: /img/
+Disallow: /js/
+Sitemap: https://www.northtel.com/sitemap.xml
